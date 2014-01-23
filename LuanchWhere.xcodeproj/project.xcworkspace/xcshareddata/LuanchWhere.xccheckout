@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>34C6BBD8-445B-4FF6-BB64-B2851489B603</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LuanchWhere</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3410C219-53D4-4A6B-88AD-5F2B7705421E</key>
+		<string>https://github.com/spaceli/LuanchWhere.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LuanchWhere.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3410C219-53D4-4A6B-88AD-5F2B7705421E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/spaceli/LuanchWhere.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3410C219-53D4-4A6B-88AD-5F2B7705421E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3410C219-53D4-4A6B-88AD-5F2B7705421E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LuanchWhere</string>
+		</dict>
+	</array>
+</dict>
+</plist>

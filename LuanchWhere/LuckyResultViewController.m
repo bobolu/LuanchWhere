@@ -54,6 +54,7 @@ typedef enum {
     NSData *data = [NSData dataWithContentsOfFile:[_documentDirectoryPath stringByAppendingPathComponent:filename]];
     self.resultImageView.image = [UIImage imageWithData:data];
     self.resultLabel.text = [filename stringByDeletingPathExtension];
+    self.indexInfoLabel.text = [NSString stringWithFormat:@"(%d/%d)",index,_indexArray.count];
 }
 - (void)tap {
     if (_model != ModelTypeRandom) {
@@ -128,12 +129,27 @@ typedef enum {
     }
     return _resultImageView;
 }
+- (UILabel *)indexInfoLabel {
+    if (!_indexInfoLabel) {
+        _indexInfoLabel = [[UILabel alloc] initWithFrame:CGRectMake(SCREEN_WIDTH/2-30, SCREEN_HEIGHT-50, 60, 40)];
+        _indexInfoLabel.textAlignment = UITextAlignmentCenter;
+        _indexInfoLabel.font = [UIFont systemFontOfSize:12];
+        _indexInfoLabel.textColor = [UIColor whiteColor];
+        _indexInfoLabel.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.3];
+        
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap)];
+        [_indexInfoLabel addGestureRecognizer:tapGesture];
+        
+        [self.resultImageView addSubview:_indexInfoLabel];
+    }
+    return _indexInfoLabel;
+}
 - (UIButton *)modelButton {
     if (!_modelButton) {
         _modelButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _modelButton.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
         _modelButton.titleLabel.font = [UIFont systemFontOfSize:12];
-        _modelButton.frame = CGRectMake(5,5, 60, 40);
+        _modelButton.frame = CGRectMake(0,SCREEN_HEIGHT-50, 60, 40);
         [_modelButton addTarget:self action:@selector(changeModel) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:_modelButton];
     }
@@ -144,7 +160,7 @@ typedef enum {
         _nextButton = [UIButton buttonWithType:UIButtonTypeCustom];
         _nextButton.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.4];
         _nextButton.titleLabel.font = [UIFont systemFontOfSize:12];
-        _nextButton.frame = CGRectMake(SCREEN_WIDTH-60,5, 60, 40);
+        _nextButton.frame = CGRectMake(SCREEN_WIDTH-60,SCREEN_HEIGHT-50, 60, 40);
         [_nextButton setTitle:@"下一个" forState:UIControlStateNormal];
         [_nextButton addTarget:self action:@selector(tap) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:_nextButton];

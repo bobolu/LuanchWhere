@@ -12,7 +12,9 @@
 
 @property (nonatomic,strong)UILabel *resultLabel;
 @property (nonatomic,strong)UIImageView *resultImageView;
+@property (nonatomic,strong)UILabel *indexInfoLabel;
 
 @property (nonatomic,strong)UIButton *modelButton;
 @property (nonatomic,strong)UIButton *nextButton;
+
 @end

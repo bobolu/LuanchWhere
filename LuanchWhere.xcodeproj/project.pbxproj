@@ -152,6 +152,11 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0420;
+				TargetAttributes = {
+					A6069105150CEC2D00D08B6E = {
+						DevelopmentTeam = T3ZLXP4K5B;
+					};
+				};
 			};
 			buildConfigurationList = A6069100150CEC2C00D08B6E /* Build configuration list for PBXProject "LuanchWhere" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -278,7 +283,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LuanchWhere/LuanchWhere-Prefix.pch";
 				INFOPLIST_FILE = "LuanchWhere/LuanchWhere-Info.plist";
